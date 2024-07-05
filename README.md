@@ -1,7 +1,11 @@
-# Truck Town
+# Airdrops Forver
 
-This is a demo implementing different types of trucks of
-varying complexity using vehicle physics.
+
+This is a game built during the Solana SpeedRun 3 hackathon, built on top of the "Truck Town" game in https://github.com/godotengine/godot-demo-projects
+
+Collect coins from the sky to extend your life and earn token reward for the coins you collected
+
+
 
 Controls:
 
@@ -20,20 +24,3 @@ brake/reverse (this also temporarily stops acceleration).
 Language: GDScript
 
 Renderer: Forward+
-
-Check out this demo on the asset library: https://godotengine.org/asset-library/asset/2752
-
-## How does it work?
-
-The base vehicle uses a
-[`VehicleBody`](https://docs.godotengine.org/en/latest/classes/class_vehiclebody.html)
-node. The trailer truck is tied together using a
-[`ConeJointTwist`](https://docs.godotengine.org/en/latest/classes/class_conetwistjoint.html)
-node, and the tow truck is tried together using a chain made of
-[`RigidBody`](https://docs.godotengine.org/en/latest/classes/class_rigidbody.html)
-nodes which are pinned together using
-[`PinJoint`](https://docs.godotengine.org/en/latest/classes/class_pinjoint.html) nodes.
-
-## Screenshots
-
-![Screenshot](screenshots/truck_town.webp)
