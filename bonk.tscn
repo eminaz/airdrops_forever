@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://c4ij8s1vh24ul"]
+
+[ext_resource type="Texture2D" uid="uid://rc2fo4r3l137" path="res://Textures/bonk.jpg" id="1_6riwj"]
+[ext_resource type="Script" path="res://bonk.gd" id="1_iy8xe"]
+[ext_resource type="AudioStream" uid="uid://ktcikl02dy61" path="res://sounds/aye.mp3" id="3_q0f3q"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3cgfe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vuj7h"]
+albedo_texture = ExtResource("1_6riwj")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cqwbv"]
+
+[node name="Bonk" type="StaticBody3D"]
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -0.0261445, 0)
+script = ExtResource("1_iy8xe")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
+mesh = SubResource("CapsuleMesh_3cgfe")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_vuj7h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("CapsuleShape3D_cqwbv")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Area3D"]
+stream = ExtResource("3_q0f3q")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
+[connection signal="finished" from="Area3D/AudioStreamPlayer" to="Area3D" method="_on_audio_stream_player_finished"]

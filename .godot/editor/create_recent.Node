@@ -1,0 +1,9 @@
+Label
+AudioStreamPlayer
+Area3D
+CollisionShape3D
+MeshInstance3D
+StaticBody3D
+Button
+Panel
+Control

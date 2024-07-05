@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://fbqjvxytp77i"]
+
+[ext_resource type="Script" path="res://coin.gd" id="1_j6er1"]
+[ext_resource type="ArrayMesh" uid="uid://dbkmsh64o6tj7" path="res://coin_mesh.tres" id="1_uspig"]
+[ext_resource type="AudioStream" uid="uid://ktcikl02dy61" path="res://sounds/aye.mp3" id="3_owq5m"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tyv40"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_55vma"]
+cull_mode = 1
+diffuse_mode = 3
+albedo_color = Color(0.886301, 0.710356, 0.126743, 0.968627)
+
+[node name="Coin" type="StaticBody3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="."]
+script = ExtResource("1_j6er1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0327259, 0.206379, -0.0431934)
+shape = SubResource("SphereShape3D_tyv40")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
+mesh = ExtResource("1_uspig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_55vma")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Area3D"]
+stream = ExtResource("3_owq5m")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
+[connection signal="finished" from="Area3D/AudioStreamPlayer" to="Area3D" method="_on_audio_stream_player_finished"]

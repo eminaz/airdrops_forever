@@ -1,0 +1,5 @@
+res://car_select/car_select.tscn
+res://coin_mesh.tres
+res://town/town_scene.tscn
+res://Coin.tscn
+res://addons/SolanaSDK/Autoload/SolanaService.tscn
