@@ -1,3 +1,4 @@
+Control
 Label
 AudioStreamPlayer
 Area3D
@@ -6,4 +7,3 @@ MeshInstance3D
 StaticBody3D
 Button
 Panel
-Control

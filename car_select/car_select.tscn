@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://ckvqraq6j1okh"]
+[gd_scene load_steps=7 format=3 uid="uid://ckvqraq6j1okh"]
 
 [ext_resource type="Script" path="res://car_select/car_select.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://bh7b4n4lg1uqt" path="res://car_select/choose_van.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://hvkcmpdq1t0k" path="res://car_select/choose_trailer.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://de7itkxhl0u28" path="res://car_select/choose_tow.png" id="4"]
+[ext_resource type="PackedScene" uid="uid://be2rmdwqrqiw0" path="res://addons/SolanaSDK/Scripts/WalletAdapter/WalletAdapterUI.tscn" id="5_rwh85"]
 
 [sub_resource type="FontVariation" id="FontVariation_hqcvw"]
 variation_embolden = 1.0
@@ -11,7 +12,7 @@ variation_transform = Transform2D(1, 0.2, 0, 1, 0, 0)
 spacing_glyph = -1
 spacing_space = 4
 
-[node name="CarSelect" type="Control"]
+[node name="CarSelect" type="Control" node_paths=PackedStringArray("wallet_adapter")]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -27,6 +28,7 @@ grow_vertical = 2
 size_flags_horizontal = 2
 size_flags_vertical = 2
 script = ExtResource("1")
+wallet_adapter = NodePath("WalletAdapterUI")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 0
@@ -94,6 +96,9 @@ offset_bottom = 572.0
 theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="WalletAdapterUI" parent="." instance=ExtResource("5_rwh85")]
+layout_mode = 1
 
 [connection signal="pressed" from="HBoxContainer/MiniVan" to="." method="_on_mini_van_pressed"]
 [connection signal="pressed" from="HBoxContainer/TrailerTruck" to="." method="_on_trailer_truck_pressed"]

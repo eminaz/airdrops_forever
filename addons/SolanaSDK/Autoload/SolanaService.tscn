@@ -17,7 +17,6 @@ script = ExtResource("2_v3adq")
 
 [node name="WalletService" type="Node" parent="."]
 script = ExtResource("5_f327g")
-use_generated = true
 custom_wallet_path = "/Users/markxie/Documents/H4HD4TBcd5KTTPRPHV4oTZ17wT7pg8TGypUZWQsU67jc.json"
 
 [node name="WalletAdapter" type="WalletAdapter" parent="WalletService"]

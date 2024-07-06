@@ -5,10 +5,16 @@ var town: Node3D = null
 @onready var wallet_address_label = $WalletAddress
 @onready var connect_button = $WalletConnectButton
 
+@export var wallet_adapter:WalletAdapterUI
+
 func _ready() -> void:
 	# Automatically focus the first item for gamepad accessibility.
 	$HBoxContainer/MiniVan.grab_focus.call_deferred()
 	SolanaService.wallet.connect("on_logged_in", show_wallet_address)
+	SolanaService.wallet.connect('on_login_begin', pop_adapter)
+	wallet_adapter.connect('on_provider_selected', handle_provider_selected)
+	wallet_adapter.connect('on_adapter_cancel', close_adapter)
+	wallet_adapter.visible = false
 
 
 func _process(_delta: float) -> void:
@@ -65,3 +71,15 @@ func show_wallet_address(success):
 		connect_button.visible = false
 		wallet_address_label.text = wallet_address
 
+
+func pop_adapter() -> void:
+	wallet_adapter.visible = true
+	wallet_adapter.setup(SolanaService.wallet.wallet_adapter.get_available_wallets())
+
+
+func handle_provider_selected(id:int) -> void:
+	print('id ', id)
+	SolanaService.wallet.login_adapter(id)
+
+func close_adapter() -> void:
+	wallet_adapter.visible = false

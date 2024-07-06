@@ -1,27 +1,27 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1720221601
+::res://::1720223652
 bonk.gd::GDScript::-1::1720218140::0::1::::<>Node<>::
 bonk.tscn::PackedScene::6825439225605190287::1720218140::0::1::::<><>::uid://rc2fo4r3l137::::res://Textures/bonk.jpg<>res://bonk.gd<>uid://ktcikl02dy61::::res://sounds/aye.mp3
 cat.gd::GDScript::-1::1720157515::0::1::::<>Node<>::
 cat.tscn::PackedScene::2010133141257524133::1720159826::0::1::::<><>::uid://bvvhcgyeogjj1::::res://Meshes/cat.obj<>res://cat.gd
 coin.gd::GDScript::-1::1720216090::0::1::::<>Node<>::
 coin.glb::PackedScene::6734064026477924272::1720069290::1720130019::1::::<><>::
-Coin.tscn::PackedScene::353997279610951984::1720221058::0::1::::<><>::res://coin.gd<>uid://dbkmsh64o6tj7::::res://coin_mesh.tres<>uid://ktcikl02dy61::::res://sounds/aye.mp3
-coin_mesh.tres::ArrayMesh::7250855837351383638::1720221058::0::1::::<><>::
+Coin.tscn::PackedScene::353997279610951984::1720223127::0::1::::<><>::res://coin.gd<>uid://dbkmsh64o6tj7::::res://coin_mesh.tres<>uid://ktcikl02dy61::::res://sounds/aye.mp3
+coin_mesh.tres::ArrayMesh::7250855837351383638::1720223126::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1720219999::0::1::::<><>::
 game_manager.gd::GDScript::-1::1720217684::0::1::::GameManager<>Node<>::
 gui.gd::GDScript::-1::1720220930::0::1::::GUI<>Node<>::
 icon.webp::CompressedTexture2D::3626017087650301524::1719931387::1720130016::1::::<><>::
-README.md::TextFile::-1::1719931387::0::1::::<><>::
+README.md::TextFile::-1::1720222154::0::1::::<><>::
 spedometer.gd::GDScript::-1::1720092956::0::1::::<>Button<>::
 ::res://addons/::1720151272
 ::res://addons/SolanaSDK/::1720151274
 icon.svg::CompressedTexture2D::8337803400720695138::1718440310::1720151274::1::::<><>::
 plugin.cfg::TextFile::-1::1718440310::0::1::::<><>::
 solana_sdk_plugin.gd::GDScript::-1::1718440310::0::1::::<>EditorPlugin<>::
-::res://addons/SolanaSDK/Autoload/::1720221058
+::res://addons/SolanaSDK/Autoload/::1720223127
 SceneLoader.tscn::PackedScene::8718452938737271484::1718440310::0::1::::<><>::res://addons/SolanaSDK/Scripts/Utility/scene_loader.gd<>uid://inxwmykjoa5p::::res://addons/SolanaSDK/Fonts/Circus Of Innocents.ttf
-SolanaService.tscn::PackedScene::4288474253152216185::1720221058::0::1::::<><>::res://addons/SolanaSDK/Scripts/Managers/solana_service.gd<>res://addons/SolanaSDK/Scripts/TransactionProcessor/transaction_processor.gd<>res://addons/SolanaSDK/Scripts/Managers/wallet_service.gd<>res://addons/SolanaSDK/Scripts/Managers/nft_manager.gd<>res://addons/SolanaSDK/Scripts/Utility/file_loader.gd<>res://addons/SolanaSDK/Scripts/Managers/candy_machine_manager.gd
+SolanaService.tscn::PackedScene::4288474253152216185::1720223127::0::1::::<><>::res://addons/SolanaSDK/Scripts/Managers/solana_service.gd<>res://addons/SolanaSDK/Scripts/TransactionProcessor/transaction_processor.gd<>res://addons/SolanaSDK/Scripts/Managers/wallet_service.gd<>res://addons/SolanaSDK/Scripts/Managers/nft_manager.gd<>res://addons/SolanaSDK/Scripts/Utility/file_loader.gd<>res://addons/SolanaSDK/Scripts/Managers/candy_machine_manager.gd
 ::res://addons/SolanaSDK/bin/::1718440310
 godot-solana-sdk.gdextension::GDExtension::-1::1718440310::0::1::::<><>::
 ::res://addons/SolanaSDK/bin/libgodot-solana-sdk.macos.template_debug.framework/::1718440310
@@ -147,13 +147,13 @@ basic_maze_WOODA.png::CompressedTexture2D::592805761916736892::1720059241::17201
 maze.tres::MeshLibrary::6697199495421300761::1720059241::0::1::::<><>::uid://ddduyoxnfnhse::::res://addons/timchi_maze_generation/assets/basic_maze_REDBRICKS.png<>uid://b7g12kiqnwp8::::res://addons/timchi_maze_generation/assets/basic_maze_HEXAGONS.png<>uid://ipfooqil3u2g::::res://addons/timchi_maze_generation/assets/basic_maze_WOODA.png
 maze_2d.png::CompressedTexture2D::4140627317732169886::1720059241::1720130016::1::::<><>::
 maze_2d_tileset.tres::TileSet::4411782462432409458::1720059241::0::1::::<><>::uid://by80r6ga0ronu::::res://addons/timchi_maze_generation/assets/maze_2d.png
-::res://build/::1720221155
-index.apple-touch-icon.png::CompressedTexture2D::8702114058410903016::1720221155::1720219496::1::::<><>::
-index.icon.png::CompressedTexture2D::3294029219426946235::1720221155::1720219496::1::::<><>::
-index.png::CompressedTexture2D::8466909291040122166::1720221155::1720219496::1::::<><>::
-::res://car_select/::1720221058
-car_select.gd::GDScript::-1::1720154085::0::1::::<>Control<>::
-car_select.tscn::PackedScene::5519083593120862163::1720221058::0::1::::<><>::res://car_select/car_select.gd<>uid://bh7b4n4lg1uqt::::res://car_select/choose_van.png<>uid://hvkcmpdq1t0k::::res://car_select/choose_trailer.png<>uid://de7itkxhl0u28::::res://car_select/choose_tow.png
+::res://build/::1720223149
+index.apple-touch-icon.png::CompressedTexture2D::8702114058410903016::1720223149::1720219496::1::::<><>::
+index.icon.png::CompressedTexture2D::3294029219426946235::1720223149::1720219496::1::::<><>::
+index.png::CompressedTexture2D::8466909291040122166::1720223149::1720219496::1::::<><>::
+::res://car_select/::1720223127
+car_select.gd::GDScript::-1::1720223557::0::1::::<>Control<>::
+car_select.tscn::PackedScene::5519083593120862163::1720223127::0::1::::<><>::res://car_select/car_select.gd<>uid://bh7b4n4lg1uqt::::res://car_select/choose_van.png<>uid://hvkcmpdq1t0k::::res://car_select/choose_trailer.png<>uid://de7itkxhl0u28::::res://car_select/choose_tow.png
 choose_tow.png::CompressedTexture2D::7506597740885427615::1719931387::1720130016::1::::<><>::
 choose_trailer.png::CompressedTexture2D::535285233427956760::1719931387::1720130016::1::::<><>::
 choose_van.png::CompressedTexture2D::2943915910416982227::1719931387::1720130016::1::::<><>::
@@ -167,8 +167,8 @@ bonk.jpg::CompressedTexture2D::1198988166065402168::1720214881::1720215053::1:::
 colormap.png::CompressedTexture2D::3585201859542895436::1718224038::1720130016::1::::<><>::
 Solana.png::CompressedTexture2D::9069040145281481155::1720107796::1720130016::1::::<><>::
 wif.png::CompressedTexture2D::1184705627524768587::1720119229::1720130016::1::::<><>::
-::res://town/::1720221058
-town_scene.tscn::PackedScene::8963914804262481880::1720221058::0::1::::<><>::res://game_manager.gd<>uid://dfdgytsvtqxwv::::res://town/truck_town.glb<>res://spedometer.gd<>uid://b2g4dq0w72e68::::res://town/materials/grass.webp<>uid://bdjiubscxkdn6::::res://town/materials/cement.tres<>res://gui.gd<>uid://dusxqlcbooyxd::::res://sounds/005 forever.mp3
+::res://town/::1720223127
+town_scene.tscn::PackedScene::8963914804262481880::1720223127::0::1::::<><>::res://game_manager.gd<>uid://dfdgytsvtqxwv::::res://town/truck_town.glb<>res://spedometer.gd<>uid://b2g4dq0w72e68::::res://town/materials/grass.webp<>uid://bdjiubscxkdn6::::res://town/materials/cement.tres<>res://gui.gd<>uid://dusxqlcbooyxd::::res://sounds/005 forever.mp3
 truck_town.glb::PackedScene::7516807590272283437::1719931387::1720130019::1::::<><>::
 ::res://town/materials/::1720130018
 cement.tres::StandardMaterial3D::2616088146665799013::1719931387::0::1::::<><>::uid://dkv00eeo3yu2w::::res://town/materials/cement.webp
